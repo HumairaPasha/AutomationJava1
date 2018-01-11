@@ -69,7 +69,7 @@ public class demo2Code {
         driver.findElement(By.name("submit")).click();
         String result = driver.findElement(By.id("file")).getText();
 
-        if (result.equals(result))
+        if (result.equals(fileName))
             count++; //file uploaded successfully check
 
         Assert.assertEquals(""+count,"4"); //count==4 i.e. alert messages verified and file uploaded successfully
